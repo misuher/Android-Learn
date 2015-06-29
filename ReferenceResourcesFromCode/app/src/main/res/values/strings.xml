@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ReferenceResourcesFromCode</string>
+
+    <string name="hello_world">My text</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn">My button</string>
+</resources>
