@@ -3,4 +3,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="mybutton">show list</string>
+    <string name="dialog_title">Choose from list</string>
+    <string-array name="lista">
+        <item>Red</item>
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
 </resources>
