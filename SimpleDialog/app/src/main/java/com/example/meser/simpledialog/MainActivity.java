@@ -1,12 +1,18 @@
 package com.example.meser.simpledialog;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,7 +20,26 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
     }
 
-    
+    public void open_dialog(View v){
+        //constructor
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        //add dialog elements
+        builder.setTitle(R.string.dialog_title);
+        builder.setMessage(R.string.dialog_text);
+        builder.setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                //here we handle what to do when the button is clicked
+                //dialog=?
+                //which=which item is clicked, usefull with lists
+                Toast.makeText(MainActivity.this, R.string.dialog_ok, Toast.LENGTH_SHORT).show();
+            }
+        });
+        builder.setNegativeButton(android.R.string.cancel, null);
+        //make the dialog with builder settings
+        Dialog dialog = builder.create();
+        dialog.show();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
