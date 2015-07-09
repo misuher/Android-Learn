@@ -3,4 +3,21 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="paises">
+        <item>Francia</item>
+        <item>Portugal</item>
+        <item>Francia</item>
+        <item>Tanzania</item>
+        <item>Siria</item>
+        <item>Sierra Leona</item>
+        <item>Sudan</item>
+        <item>Suiza</item>
+        <item>Taiwan</item>
+        <item>Singapur</item>
+        <item>Rusia</item>
+        <item>Rumania</item>
+        <item>Ruanda</item>
+        <item>Hungria</item>
+    </string-array>
 </resources>
